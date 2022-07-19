@@ -179,6 +179,7 @@ export const updatePictureProfile = async (req: Request, res: Response): Promise
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -206,6 +207,7 @@ export const updateProfile = async (req: Request, res: Response): Promise<Respon
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -244,6 +246,7 @@ export const changePassword = async (req: Request, res: Response): Promise<Respo
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -275,6 +278,7 @@ export const changeAccountPrivacy = async (req: Request, res: Response): Promise
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -300,6 +304,7 @@ export const getSearchUser = async (req: Request, res: Response): Promise<Respon
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -340,6 +345,7 @@ export const getAnotherUserById = async (req: Request, res: Response): Promise<R
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -382,6 +388,7 @@ export const AddNewFollowing = async (req: Request, res: Response): Promise<Resp
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -411,6 +418,7 @@ export const AcceptFollowerRequest = async (req: Request, res: Response): Promis
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -435,8 +443,9 @@ export const deleteFollowing = async (req: Request, res: Response): Promise<Resp
             resp: true,
             message: 'Deleted friend'
         });
-
+        
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -462,6 +471,7 @@ export const getAllFollowings = async (req: Request, res: Response): Promise<Res
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -487,6 +497,7 @@ export const getAllFollowers = async (req: Request, res: Response): Promise<Resp
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -515,6 +526,7 @@ export const deleteFollowers = async (req: Request, res: Response): Promise<Resp
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err

@@ -20,6 +20,7 @@ export const getNotificationsByUser = async (req: Request, res: Response): Promi
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err

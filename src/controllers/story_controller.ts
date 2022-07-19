@@ -33,6 +33,7 @@ export const addNewStory = async (req: Request, res: Response): Promise<Response
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -57,6 +58,7 @@ export const getAllStoryHome = async (req: Request, res: Response): Promise<Resp
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -82,6 +84,7 @@ export const getStoryByUser = async (req: Request, res: Response): Promise<Respo
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err

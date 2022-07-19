@@ -30,6 +30,7 @@ export const createNewPost = async (req: Request, res: Response): Promise<Respon
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -58,6 +59,7 @@ export const getAllPostHome = async (req: Request, res: Response): Promise<Respo
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -83,6 +85,7 @@ export const getPostByIdPerson = async (req: Request, res: Response): Promise<Re
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -109,6 +112,7 @@ export const savePostByUser = async (req: Request, res: Response): Promise<Respo
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -134,6 +138,7 @@ export const getListSavedPostsByUser = async (req: Request, res: Response): Prom
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -159,6 +164,7 @@ export const getAllPostsForSearch = async (req: Request, res: Response): Promise
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -204,6 +210,7 @@ export const likeOrUnLikePost = async (req: Request, res: Response): Promise<Res
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -229,6 +236,7 @@ export const getCommentsByIdPost = async (req: Request, res: Response): Promise<
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -255,6 +263,7 @@ export const addNewComment = async (req: Request, res: Response): Promise<Respon
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -296,6 +305,7 @@ export const likeOrUnLikeComment = async (req: Request, res: Response): Promise<
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -321,6 +331,7 @@ export const getAllPostByUserID = async (req: Request, res: Response): Promise<R
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err

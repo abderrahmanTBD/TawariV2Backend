@@ -21,6 +21,7 @@ export const getListMessagesByUser = async (req: Request, res: Response): Promis
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
@@ -84,6 +85,7 @@ export const getAllMessagesByUser = async (req: Request, res: Response): Promise
         });
 
     } catch(err) {
+        console.log( err );
         return res.status(500).json({
             resp: false,
             message: err
